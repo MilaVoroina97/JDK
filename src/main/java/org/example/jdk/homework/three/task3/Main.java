@@ -1,6 +1,5 @@
 package org.example.jdk.homework.three.task3;
 
-import java.util.Arrays;
 
 public class Main {
 
@@ -17,13 +16,11 @@ public class Main {
         Integer[] arr7 = new Integer[]{5, 6, 7, 8};
         String[] arr8 = new String[]{"Winter", "Spring", "Autumn"};
 
-
-
-        Arrays arraysCheck = new Arrays();
-
-        System.out.println(arraysCheck.compareArrays(arr1, arr2));
-        System.out.println(arraysCheck.compareArrays(arr3, arr4));
-        System.out.println(arraysCheck.compareArrays(arr5, arr6));
-        System.out.println(arraysCheck.compareArrays(arr7, arr8));
+        ArrayComparator arrayComparator = new ArrayComparator();
+        System.out.println(arrayComparator.compareArrays(arr1, arr2));
+        System.out.println(arrayComparator.compareArrays(arr3, arr4));
+        System.out.println(arrayComparator.compareArrays(arr5, arr6));
+        System.out.println(arrayComparator.compareArrays(arr7, arr8));
     }
+
 }
